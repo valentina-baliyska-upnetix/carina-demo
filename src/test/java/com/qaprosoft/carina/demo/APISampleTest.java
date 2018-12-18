@@ -76,14 +76,4 @@ public class APISampleTest extends AbstractTest {
         deleteUserMethod.validateResponse();
     }
 
-
-    @Test(description = "JIRA#DEMO-0004")
-    @MethodOwner(owner = "qpsdemo")
-    @TestPriority(Priority.P1)
-    public void testDeleteUsers1() {
-        DeleteUserMethod deleteUserMethod = new DeleteUserMethod();
-        deleteUserMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
-        deleteUserMethod.callAPI();
-        deleteUserMethod.validateResponse();
-    }
 }
