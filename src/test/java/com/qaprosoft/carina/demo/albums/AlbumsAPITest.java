@@ -12,7 +12,7 @@ public class AlbumsAPITest extends AbstractTest {
     @Test
     public void createAlbumTest(){
         PostAlbumMethod postAlbumMethod = new PostAlbumMethod();
-        postAlbumMethod.expectResponseStatus(HttpResponseStatusType.CREATED_201);
+        postAlbumMethod.expectResponseStatus(HttpResponseStatusType.UNAUTHORIZED_401);
         postAlbumMethod.callAPI();
         //String rs = postAlbumMethod.callAPI().asString();
         postAlbumMethod.validateResponse();
