@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class PostLoginData extends AbstractApiMethodV2 {
     public PostLoginData() {
-        super("api/techtour/_post/rq.json", "api/techtour/_post/rs.json");
+        super(null, "api/techtour/_post/rs.json", "api/techtour/_post/logindata.properties");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }
