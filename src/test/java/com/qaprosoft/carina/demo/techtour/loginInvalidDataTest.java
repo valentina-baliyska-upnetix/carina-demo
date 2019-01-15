@@ -12,7 +12,8 @@ public class loginInvalidDataTest extends AbstractTest {
         PostLoginData postLoginData = new PostLoginData();
         postLoginData.expectResponseStatus(HttpResponseStatusType.UNAUTHORIZED_401);
         postLoginData.callAPI();
-        postLoginData.validateResponse();
+        //postLoginData.validateResponse();
+        postLoginData.validateResponseAgainstJSONSchema("api/albums/_post/rs.schema");
     }
 }
 
