@@ -1,6 +1,0 @@
-{
-  "j_username": ${j_username}
-  "error": "Unauthorized",
-  "message": "Authentication failed",
-  "status": 401
-}

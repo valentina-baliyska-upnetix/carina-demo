@@ -12,14 +12,15 @@ public class AlbumsAPITest extends AbstractTest {
     @Test
     public void createAlbumTest(){
         PostAlbumMethod postAlbumMethod = new PostAlbumMethod();
-        postAlbumMethod.expectResponseStatus(HttpResponseStatusType.UNAUTHORIZED_401);
+        postAlbumMethod.expectResponseStatus(HttpResponseStatusType.CREATED_201);
         postAlbumMethod.callAPI();
-        //String rs = postAlbumMethod.callAPI().asString();
+        String rs = postAlbumMethod.callAPI().asString();
+        postAlbumMethod.callAPI();
         postAlbumMethod.validateResponse();
 
-//        int albumId = new JsonPath(rs).getInt("albumId");
-//        GetAlbumMethod getAlbumMethod = new GetAlbumMethod(String.valueOf(albumId));
-//        getAlbumMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
-//        getAlbumMethod.callAPI();
+        int albumId = new JsonPath(rs).getInt("albumId");
+        GetAlbumMethod getAlbumMethod = new GetAlbumMethod(String.valueOf(albumId));
+        getAlbumMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        getAlbumMethod.callAPI();
     }
 }

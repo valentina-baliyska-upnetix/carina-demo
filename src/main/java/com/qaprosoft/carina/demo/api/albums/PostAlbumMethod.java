@@ -5,7 +5,7 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
 public class PostAlbumMethod extends AbstractApiMethodV2 {
     public PostAlbumMethod() {
-        super(null, "api/albums/_post/rs.json", "api/albums/_post/album.properties");
+        super("api/albums/_post/rq.json", "api/albums/_post/rs.json", "api/albums/_post/album.properties");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }
