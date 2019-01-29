@@ -18,6 +18,8 @@ public class AlbumsAPITest extends AbstractTest {
         postAlbumMethod.callAPI();
         postAlbumMethod.validateResponse();
 
+        System.out.println(rs);
+
         int albumId = new JsonPath(rs).getInt("albumId");
         GetAlbumMethod getAlbumMethod = new GetAlbumMethod(String.valueOf(albumId));
         getAlbumMethod.expectResponseStatus(HttpResponseStatusType.OK_200);

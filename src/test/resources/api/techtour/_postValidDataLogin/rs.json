@@ -1,0 +1,11 @@
+{
+  "login": "valentina.baliyska@upnetix.com",
+  "password": null,
+  "firstName": "Valentina",
+  "lastName": "Baliyska",
+  "email": "valentina.baliyska@upnetix.com",
+  "activated": true,
+  "langKey": "en",
+  "authorities": ["ROLE_USER"],
+  "acceptedTermsAndConditions": true
+}

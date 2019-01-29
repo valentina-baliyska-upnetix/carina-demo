@@ -5,9 +5,9 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
 import java.util.Properties;
 
-public class PostInvalidLoginData extends AbstractApiMethodV2 {
-    public PostInvalidLoginData() {
-        super(null, "api/techtour/_postInvalidDataLogin/rs.json", "api/techtour/_postInvalidDataLogin/invalidlogindata.properties");
+public class GetAccountData extends AbstractApiMethodV2 {
+    public GetAccountData() {
+        super(null, null);
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }

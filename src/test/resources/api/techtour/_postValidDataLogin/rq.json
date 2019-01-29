@@ -1,0 +1,6 @@
+{
+  j_username: "${j_username}",
+  j_password: "${j_password}",
+  remember-me: "false",
+  submit: "login"
+}

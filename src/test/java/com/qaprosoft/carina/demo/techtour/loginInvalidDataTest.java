@@ -14,7 +14,7 @@ public class loginInvalidDataTest extends AbstractTest {
         postInvalidLoginData.expectResponseStatus(HttpResponseStatusType.UNAUTHORIZED_401);
         postInvalidLoginData.callAPI();
         postInvalidLoginData.validateResponse();
-        //postInvalidLoginData.validateResponseAgainstJSONSchema("api/techtour/_post/rs.schema");
+        //postInvalidLoginData.validateResponseAgainstJSONSchema("api/techtour/_postInvalidDataLogin/rs.schema");
     }
 }
 

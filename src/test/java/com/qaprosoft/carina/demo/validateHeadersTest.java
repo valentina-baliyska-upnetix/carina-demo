@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.techtour;
+package com.qaprosoft.carina.demo;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
